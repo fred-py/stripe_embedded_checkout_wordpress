@@ -1,2 +1,2 @@
-web: gunicorn server:app --proxy-headers
+web: gunicorn server:app
 
