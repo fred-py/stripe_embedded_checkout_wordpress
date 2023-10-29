@@ -16,6 +16,8 @@ app = Flask(__name__,
             static_url_path='',
             static_folder='public')
 
+port = int(os.environ.get("PORT", 4242))  # added based on fl0 repo
+
 #YOUR_DOMAIN = 'http://localhost:4242'
 YOUR_DOMAIN = 'https://unitedpropertyservices.au/wheelie-bin-clean/'
 
@@ -48,4 +50,4 @@ def session_status():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=4242)
+    app.run(port=port)
