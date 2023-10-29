@@ -16,7 +16,7 @@ app = Flask(__name__,
             static_url_path='',
             static_folder='public')
 
-port = int(os.environ.get("PORT", 4242))  # added based on fl0 repo
+port = int(os.environ.get("PORT", 5000))  # added based on fl0 repo
 
 #YOUR_DOMAIN = 'http://localhost:4242'
 YOUR_DOMAIN = 'https://unitedpropertyservices.au/wheelie-bin-clean/'
